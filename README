@@ -3,6 +3,7 @@
 1. jRails
 2. Paperclip
 3. resource_controller
+4. responds_to_parent
 
 == Implementation
 
