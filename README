@@ -1,0 +1,11 @@
+== Rails Plugin
+
+1. jRails
+2. Paperclip
+3. resource_controller
+
+== Implementation
+
+1. rake db:create
+2. rake db:migrate
+

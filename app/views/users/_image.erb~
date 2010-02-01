@@ -1,0 +1,5 @@
+<% fields_for_image(image) do |i| %>i
+  <%= i.label :image, "Upload Image" %>
+  <%= .file_field :avatar, :class => "gt-form-text"  %>
+  <%= link_to_function "remove", "$('#image').click(function() {$(this).remove();});" %>
+<% end %>

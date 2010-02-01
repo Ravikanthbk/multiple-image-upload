@@ -1,0 +1,12 @@
+class UsersController < ApplicationController
+  resource_controller
+
+  new_action.before do
+    @user.images.build
+  end
+
+  create do
+      flash "User successfully created!"
+    end
+
+end

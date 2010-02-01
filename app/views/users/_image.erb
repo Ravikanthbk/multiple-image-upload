@@ -1,0 +1,5 @@
+<% fields_for_image(image) do |i| %>
+  <p><%= i.label :image, "Upload Image" %></p>
+  <p><%= i.file_field :avatar %>
+  <%= link_to_function "remove", "$('#image').click(function() {$(this).remove();});" %></p>
+<% end %>

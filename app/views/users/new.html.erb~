@@ -1,0 +1,18 @@
+<h1>Create a new User</h1>
+<% form_for @user,  :html => { :multipart => true } do |f| %>
+	<p><%= f.error_messages %></p>
+	<p><%= f.label :first_name %></p>
+	<p><%= f.text_field :first_name %></p>
+	<p><%= f.label :last_name %></p>
+	<p><%= f.text_field :last_name %></p>
+	<p><%= f.label :email %></p>
+	<p><%= f.text_field :email %></p>
+	<div id="image">
+		<%= render :partial => 'image', :collection => @user.images %>
+		<%= add_image_link("Add a image") %>
+	</div>
+	<p><%= f.submit "Submit" %></p>
+<% end %>
+
+
+

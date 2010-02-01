@@ -1,0 +1,14 @@
+<p><%= flash[:notice] %></p>
+<p>First Name:<%= @user.first_name %></p>
+<p>Last Name:<%= @user.last_name %></p>
+<p>Email:<%= @user.email %></p>
+<p>Images</p>
+<% unless @user.images.nil? %>
+	<ul>
+		<% for image in @user.images %>
+			<li><%= image_tag image.avatar.url(:thumb) %></li>
+		<% end %>
+	</ul>
+<%end%>
+<%= link_to "Edit", edit_user_path(@user) %>
+  
